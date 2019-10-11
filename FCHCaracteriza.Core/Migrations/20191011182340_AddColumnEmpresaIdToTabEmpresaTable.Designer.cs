@@ -4,14 +4,16 @@ using FCHCaracteriza.Core.Core.Domain;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FCHCaracteriza.Core.Migrations
 {
     [DbContext(typeof(FCH_PLATPROVEE_MINERIAContext))]
-    partial class FCH_PLATPROVEE_MINERIAContextModelSnapshot : ModelSnapshot
+    [Migration("20191011182340_AddColumnEmpresaIdToTabEmpresaTable")]
+    partial class AddColumnEmpresaIdToTabEmpresaTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

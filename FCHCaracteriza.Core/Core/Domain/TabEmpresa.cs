@@ -5,6 +5,7 @@ namespace FCHCaracteriza.Core.Core.Domain
 {
     public partial class TabEmpresa
     {
+        public int EmpresaId { get; set; }
         public string RutEmp { get; set; }
         public string RazonSocial { get; set; }
         public string Nombre { get; set; }
